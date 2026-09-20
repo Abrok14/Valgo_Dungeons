@@ -1,0 +1,62 @@
+[gd_scene format=3 uid="uid://bnx5daibc0gwh"]
+
+[ext_resource type="Theme" uid="uid://bowk0i30u478y" path="res://resources/menu_theme.tres" id="1_a2ovs"]
+[ext_resource type="PackedScene" uid="uid://ds3tk8imhdpr1" path="res://user_interface/buttons/!start.tscn" id="1_fua8w"]
+[ext_resource type="Script" uid="uid://c1bg4um63i30r" path="res://user_interface/buttons/start_button.gd" id="3_1f3gs"]
+[ext_resource type="Script" uid="uid://bshobkuxmyk8x" path="res://user_interface/buttons/exit_button.gd" id="3_mfiqh"]
+[ext_resource type="Script" uid="uid://ipb60pukpoii" path="res://user_interface/buttons/option_button.gd" id="4_lkx45"]
+
+[node name="Menu" type="Control" unique_id=875496658]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme = ExtResource("1_a2ovs")
+
+[node name="Menu_buton" type="PanelContainer" parent="." unique_id=24328998]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="VBoxContainer" type="VBoxContainer" parent="Menu_buton" unique_id=1610121937]
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+
+[node name="Title" type="RichTextLabel" parent="Menu_buton/VBoxContainer" unique_id=1183210763]
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 0
+theme_type_variation = &"Title"
+bbcode_enabled = true
+text = "[wave][fade start=6]VALGO DUNGEONS"
+fit_content = true
+autowrap_mode = 0
+
+[node name="Start" parent="Menu_buton/VBoxContainer" unique_id=1613883100 instance=ExtResource("1_fua8w")]
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 0
+script = ExtResource("3_1f3gs")
+
+[node name="Options" parent="Menu_buton/VBoxContainer" unique_id=8026203 instance=ExtResource("1_fua8w")]
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 0
+text = "Options"
+script = ExtResource("4_lkx45")
+
+[node name="Exit" parent="Menu_buton/VBoxContainer" unique_id=255166823 instance=ExtResource("1_fua8w")]
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 0
+text = "Exit"
+script = ExtResource("3_mfiqh")
+
+[connection signal="pressed" from="Menu_buton/VBoxContainer/Options" to="Menu_buton/VBoxContainer/Options" method="_on_pressed"]
+[connection signal="pressed" from="Menu_buton/VBoxContainer/Exit" to="Menu_buton/VBoxContainer/Exit" method="_on_pressed"]

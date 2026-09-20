@@ -1,0 +1,12 @@
+[gd_resource type="Theme" format=3 uid="uid://bowk0i30u478y"]
+
+[ext_resource type="StyleBox" uid="uid://cx0f3wv1fw0xd" path="res://resources/panelcontainer_flatbox.tres" id="1_muft2"]
+[ext_resource type="FontFile" uid="uid://7ihh1ab14wqa" path="res://assets/Font/Jersey10-Regular.ttf" id="2_fnlfk"]
+
+[resource]
+default_font = ExtResource("2_fnlfk")
+default_font_size = 32
+PanelContainer/styles/panel = ExtResource("1_muft2")
+RichTextLabel/colors/default_color = Color(1, 1, 1, 1)
+Title/base_type = &"RichTextLabel"
+Title/font_sizes/normal_font_size = 95
