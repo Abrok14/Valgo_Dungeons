@@ -11,13 +11,25 @@ config_version=5
 [application]
 
 config/name="Valgo Dungeons"
+run/main_scene="uid://bnx5daibc0gwh"
 config/features=PackedStringArray("4.7", "Forward Plus")
-config/icon="res://Menu/icon.svg"
+
+[audio]
+
+buses/default_bus_layout="uid://b5qb78qawskqy"
+
+[autoload]
+
+MusicMenu="*uid://dh0crpn1k4agc"
 
 [display]
 
 window/stretch/mode="canvas_items"
 window/stretch/aspect="expand"
+
+[editor]
+
+version_control/autoload_on_startup=true
 
 [physics]
 

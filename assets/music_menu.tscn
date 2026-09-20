@@ -1,0 +1,8 @@
+[gd_scene format=3 uid="uid://dh0crpn1k4agc"]
+
+[ext_resource type="AudioStream" uid="uid://dn6dew1s3pqfd" path="res://assets/it`s like u can`t decide (Slowed).mp3" id="1_eo7pn"]
+
+[node name="music_menu" type="AudioStreamPlayer" unique_id=524610295]
+stream = ExtResource("1_eo7pn")
+autoplay = true
+bus = &"Music"

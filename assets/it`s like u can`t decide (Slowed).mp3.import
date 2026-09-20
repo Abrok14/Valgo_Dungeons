@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://dn6dew1s3pqfd"
+path="res://.godot/imported/it`s like u can`t decide (Slowed).mp3-020a5ce956642f538ce63cd945b3ef6a.mp3str"
+
+[deps]
+
+source_file="res://assets/it`s like u can`t decide (Slowed).mp3"
+dest_files=["res://.godot/imported/it`s like u can`t decide (Slowed).mp3-020a5ce956642f538ce63cd945b3ef6a.mp3str"]
+
+[params]
+
+loop=true
+loop_offset=0.0
+bpm=0.0
+beat_count=0
+bar_beats=4
