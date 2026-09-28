@@ -144,7 +144,7 @@ scale = Vector2(4.97, 4.97)
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=545698512]
 position = Vector2(0, 0.40241447)
-scale = Vector2(0.61368215, 0.5573441)
+scale = Vector2(0.61, 0.557)
 shape = SubResource("CapsuleShape2D_n8ue0")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=2026691182]
