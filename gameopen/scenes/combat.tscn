@@ -1,0 +1,20 @@
+[gd_scene format=3 uid="uid://0nf2no7wmftb"]
+
+[ext_resource type="Script" uid="uid://ce3ivf8eu65rm" path="res://gameopen/scripts/combat/combat.gd" id="1_862bi"]
+[ext_resource type="PackedScene" uid="uid://bdqqbn4wov1qr" path="res://gameopen/scenes/entity.tscn" id="2_2ppu6"]
+
+[node name="combat_arena" type="Control" unique_id=725883782]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_862bi")
+
+[node name="Entity" parent="." unique_id=1205535274 instance=ExtResource("2_2ppu6")]
+layout_mode = 0
+offset_left = 330.0
+offset_top = 301.0
+offset_right = 370.0
+offset_bottom = 341.0

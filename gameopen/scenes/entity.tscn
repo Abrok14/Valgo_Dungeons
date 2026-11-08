@@ -1,0 +1,22 @@
+[gd_scene format=3 uid="uid://bdqqbn4wov1qr"]
+
+[ext_resource type="Script" uid="uid://l6b2rcrbovmj" path="res://gameopen/scripts/combat/entity.gd" id="1_bwlk3"]
+[ext_resource type="Script" uid="uid://cueinnihye4kp" path="res://gameopen/scripts/combat/attack_node.gd" id="2_oemp7"]
+[ext_resource type="Script" uid="uid://o42oelwd0ixq" path="res://gameopen/scripts/combat/health_node.gd" id="3_isuoh"]
+[ext_resource type="Texture2D" uid="uid://d3yl0o5m7a50o" path="res://assets/img/monsters/skeleton-stand.jpg" id="4_oemp7"]
+
+[node name="Entity" type="Control" unique_id=1205535274]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+script = ExtResource("1_bwlk3")
+
+[node name="AttackNode" type="Node" parent="." unique_id=551023723]
+script = ExtResource("2_oemp7")
+
+[node name="HealthNode" type="Node" parent="." unique_id=22674067]
+script = ExtResource("3_isuoh")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1531683455]
+texture = ExtResource("4_oemp7")

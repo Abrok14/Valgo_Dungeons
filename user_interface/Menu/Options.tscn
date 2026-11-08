@@ -1,10 +1,10 @@
 [gd_scene format=3 uid="uid://sr1uhmeuwo86"]
 
 [ext_resource type="Theme" uid="uid://bowk0i30u478y" path="res://resources/menu_theme.tres" id="1_hoxgi"]
-[ext_resource type="PackedScene" uid="uid://ds3tk8imhdpr1" path="res://user_interface/buttons/!start.tscn" id="2_c10i3"]
-[ext_resource type="Script" uid="uid://c440jq1vbpioo" path="res://user_interface/buttons/music_slider.gd" id="2_ergu3"]
-[ext_resource type="Script" uid="uid://cvjan5044jmwg" path="res://user_interface/buttons/fullscreen_togle.gd" id="3_4re6k"]
-[ext_resource type="Script" uid="uid://pu55u58ix4fy" path="res://user_interface/buttons/back_option.gd" id="3_dmuy0"]
+[ext_resource type="PackedScene" uid="uid://ds3tk8imhdpr1" path="res://gameopen/scripts/menu/buttons/!start.tscn" id="2_c10i3"]
+[ext_resource type="Script" uid="uid://c440jq1vbpioo" path="res://gameopen/scripts/menu/buttons/music_slider.gd" id="2_ergu3"]
+[ext_resource type="Script" uid="uid://cvjan5044jmwg" path="res://gameopen/scripts/menu/buttons/fullscreen_togle.gd" id="3_4re6k"]
+[ext_resource type="Script" uid="uid://pu55u58ix4fy" path="res://gameopen/scripts/menu/buttons/back_option.gd" id="3_dmuy0"]
 
 [node name="Options" type="Control" unique_id=1910317622]
 layout_mode = 3

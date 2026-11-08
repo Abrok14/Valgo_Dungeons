@@ -1,0 +1,8 @@
+[gd_resource type="Resource" format=3 uid="uid://cbrm184oklsn2"]
+
+[ext_resource type="Script" uid="uid://c1iu5g74y3mq3" path="res://gameopen/scripts/combat/skillResource.gd" id="1_1v4a5"]
+
+[resource]
+script = ExtResource("1_1v4a5")
+SkillName = "Attack"
+SkillPower = 100.0

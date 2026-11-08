@@ -1,0 +1,14 @@
+[gd_resource type="Resource" format=3 uid="uid://da3ivrrl7f1ag"]
+
+[ext_resource type="Script" uid="uid://doq0s4d4beg4o" path="res://gameopen/scripts/combat/EntityResource.gd" id="1_diua8"]
+[ext_resource type="Resource" uid="uid://cbrm184oklsn2" path="res://resources/skills/Attack.tres" id="1_hr4bm"]
+[ext_resource type="Resource" uid="uid://bs1eaktvhyufj" path="res://resources/skills/HeavyAttack.tres" id="2_k3qj3"]
+
+[resource]
+script = ExtResource("1_diua8")
+MobName = "Skeleton"
+MaxHP = 25.0
+Str = 3
+Dex = 3
+Int = 3
+Skills = Array[Resource]([ExtResource("1_hr4bm"), ExtResource("2_k3qj3")])
