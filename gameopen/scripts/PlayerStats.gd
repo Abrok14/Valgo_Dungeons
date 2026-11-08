@@ -1,5 +1,8 @@
 extends Node
 
+var Frames: SpriteFrames = preload("res://resources/player_frames.tres")
+var Picture: Texture2D  # unused for the player, needed because entity.gd reads it
+
 var MaxHP:float = 100
 var CurentHP:float
 var Str:int = 10

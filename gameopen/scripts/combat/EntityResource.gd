@@ -1,6 +1,8 @@
 extends Resource
 
 @export var Frames: SpriteFrames
+@export var Picture: Texture2D
+
 @export var MobName:String
 @export var MaxHP:float
 @export var Str:int

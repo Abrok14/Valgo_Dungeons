@@ -1,7 +1,7 @@
 [gd_scene format=3 uid="uid://0nf2no7wmftb"]
 
 [ext_resource type="Script" uid="uid://ce3ivf8eu65rm" path="res://gameopen/scripts/combat/combat.gd" id="1_862bi"]
-[ext_resource type="PackedScene" uid="uid://bdqqbn4wov1qr" path="res://gameopen/scenes/entity.tscn" id="2_2ppu6"]
+[ext_resource type="Script" uid="uid://b14ldl0qsifhe" path="res://gameopen/scripts/combat/player_skill_box.gd" id="2_862bi"]
 
 [node name="combat_arena" type="Control" unique_id=725883782]
 layout_mode = 3
@@ -12,9 +12,34 @@ grow_horizontal = 2
 grow_vertical = 2
 script = ExtResource("1_862bi")
 
-[node name="Entity" parent="." unique_id=1205535274 instance=ExtResource("2_2ppu6")]
+[node name="ColorRect2" type="ColorRect" parent="." unique_id=655010895]
+layout_mode = 1
+anchors_preset = 12
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_top = -234.0
+grow_horizontal = 2
+grow_vertical = 0
+color = Color(0.16565639, 0.16565639, 0.16565648, 1)
+
+[node name="ColorRect" type="ColorRect" parent="." unique_id=394433162]
+layout_mode = 1
+anchors_preset = 14
+anchor_top = 0.5
+anchor_right = 1.0
+anchor_bottom = 0.5
+offset_top = -322.0
+offset_bottom = 92.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0.21466322, 0, 0, 1)
+metadata/_edit_use_anchors_ = true
+
+[node name="PlayerSkillBox" type="VBoxContainer" parent="." unique_id=267825979]
 layout_mode = 0
-offset_left = 310.0
-offset_top = 304.0
-offset_right = 350.0
-offset_bottom = 344.0
+offset_left = 58.0
+offset_top = 445.0
+offset_right = 465.0
+offset_bottom = 590.0
+script = ExtResource("2_862bi")

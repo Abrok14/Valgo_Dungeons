@@ -3,6 +3,10 @@
 [ext_resource type="Script" uid="uid://l6b2rcrbovmj" path="res://gameopen/scripts/combat/entity.gd" id="1_bwlk3"]
 [ext_resource type="Script" uid="uid://cueinnihye4kp" path="res://gameopen/scripts/combat/attack_node.gd" id="2_oemp7"]
 [ext_resource type="Script" uid="uid://o42oelwd0ixq" path="res://gameopen/scripts/combat/health_node.gd" id="3_isuoh"]
+[ext_resource type="SpriteFrames" uid="uid://dmy3n8q5hcy42" path="res://resources/player_frames.tres" id="4_oemp7"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_p18xn"]
+bg_color = Color(0.19005695, 0.7164608, 0.22688222, 1)
 
 [node name="Entity" type="Control" unique_id=1205535274 node_paths=PackedStringArray("SpriteNode", "HealthNode", "AttackNode")]
 layout_mode = 3
@@ -21,3 +25,15 @@ script = ExtResource("2_oemp7")
 script = ExtResource("3_isuoh")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=2063567436]
+scale = Vector2(3, 3)
+sprite_frames = ExtResource("4_oemp7")
+animation = &"idle"
+
+[node name="HealthBar" type="ProgressBar" parent="." unique_id=1982817778]
+layout_mode = 0
+offset_left = -40.0
+offset_top = -70.0
+offset_right = 40.0
+offset_bottom = -43.0
+theme_override_styles/fill = SubResource("StyleBoxFlat_p18xn")
+max_value = 1.0

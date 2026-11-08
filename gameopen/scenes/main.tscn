@@ -398,7 +398,6 @@ tile_set = SubResource("TileSet_bdt0x")
 
 [node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=1329544321]
 process_mode = 3
-visible = false
 
 [node name="ColorRect" type="ColorRect" parent="CanvasLayer" unique_id=1258385375]
 anchors_preset = 15

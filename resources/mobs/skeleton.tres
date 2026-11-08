@@ -2,10 +2,12 @@
 
 [ext_resource type="Script" uid="uid://doq0s4d4beg4o" path="res://gameopen/scripts/combat/EntityResource.gd" id="1_diua8"]
 [ext_resource type="Resource" uid="uid://cbrm184oklsn2" path="res://resources/skills/Attack.tres" id="1_hr4bm"]
+[ext_resource type="Texture2D" uid="uid://d2kowbbtt6mah" path="res://assets/img/monsters/skeleton-stand.png" id="1_k3qj3"]
 [ext_resource type="Resource" uid="uid://bs1eaktvhyufj" path="res://resources/skills/HeavyAttack.tres" id="2_k3qj3"]
 
 [resource]
 script = ExtResource("1_diua8")
+Picture = ExtResource("1_k3qj3")
 MobName = "Skeleton"
 MaxHP = 25.0
 Str = 3
