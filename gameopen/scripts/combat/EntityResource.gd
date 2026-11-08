@@ -1,5 +1,6 @@
 extends Resource
 
+@export var Frames: SpriteFrames
 @export var MobName:String
 @export var MaxHP:float
 @export var Str:int

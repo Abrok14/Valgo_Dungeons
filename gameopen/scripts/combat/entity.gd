@@ -1,5 +1,6 @@
 extends Control
 
+@export var SpriteNode: AnimatedSprite2D
 @export var HealthNode:Node
 @export var AttackNode:Node
 
@@ -18,7 +19,7 @@ func LoadEntity(TagetRes):
 	Dex = TagetRes.Dex
 	Int = TagetRes.Int
 	HealthNode.MaxHP = TagetRes.MaxHP
-	HealthNode.CurentHP = TagetRes.CurentHP
+	HealthNode.CurrentHP = TagetRes.CurrentHP
 	
 	AttackNode.LoadSkills(TagetRes.Skills)
 	HealthNode.Death.connect(Death)

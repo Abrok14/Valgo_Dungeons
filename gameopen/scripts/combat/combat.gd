@@ -15,4 +15,4 @@ func _ready():
 	EnemyEntity = ENTITY.instantiate()
 	add_child(EnemyEntity)
 	EnemyEntity.LoadEntity(SKELETON)
-	PlayerEntity.position = Vector2(600,400)
+	EnemyEntity.position = Vector2(600,400)
