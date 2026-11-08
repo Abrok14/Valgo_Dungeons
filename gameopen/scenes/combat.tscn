@@ -14,7 +14,7 @@ script = ExtResource("1_862bi")
 
 [node name="Entity" parent="." unique_id=1205535274 instance=ExtResource("2_2ppu6")]
 layout_mode = 0
-offset_left = 330.0
-offset_top = 301.0
-offset_right = 370.0
-offset_bottom = 341.0
+offset_left = 310.0
+offset_top = 304.0
+offset_right = 350.0
+offset_bottom = 344.0

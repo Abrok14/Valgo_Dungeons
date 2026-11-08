@@ -1,6 +1,6 @@
 extends Node
 
-var MaxHP:float
+var MaxHP:float = 100
 var CurentHP:float
 var Str:int = 10
 var Dex:int = 4
